@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="text-center w-50 mx-auto">
+      <h1>Update Plan</h1>
+      <form method="POST" action="/plans/edit">
+        <input type="hidden" name="id" value="{{plan.id}}">
+        <div class="form-floating">
+          <input type="text" class="form-control" name="plan" id="plan" placeholder="plan" value="{{plan.plan}}" required>
+          <label for="plan">Plan</label>
+        </div>
+        <div class="form-floating">
+          <input type="number" class="form-control" name="cost" id="cost" placeholder="cost" value="{{plan.cost}}" required>
+          <label for="cost">Cost</label>
+        </div>
+        <div class="form-floating">
+          <input type="number" class="form-control" name="websites" id="websites" placeholder="websites" value="{{plan.websites}}" required>
+          <label for="websites">Websites</label>
+        </div>
+        <div class="form-floating">
+          <input type="number" class="form-control" name="storage" id="storage" placeholder="storage" value="{{plan.storage}}" required>
+          <label for="storage">Storage</label>
+        </div>
+        <div class="form-floating">
+          <input type="number" class="form-control" name="visits" id="visits" placeholder="visits" value="{{plan.visits}}" required>
+          <label for="visits">Visits</label>
+        </div>
+        <div class="form-floating">
+          <input type="number" class="form-control" name="emails" id="emails" placeholder="emails" value="{{plan.emails}}" required>
+          <label for="emails">Emails</label>
+        </div>
+        <div class="form-floating">
+          <input type="text" class="form-control" name="ssl" id="ssl" placeholder="ssl" value="{{plan.ssl}}" required>
+          <label for="ssl">SSL</label>
+        </div>
+        <div class="form-floating">
+          <input type="number" class="form-control" name="domains" id="domains" placeholder="domains" value="{{plan.domains}}" required>
+          <label for="domains">Domains</label>
+        </div>
+        <div class="form-floating">
+          <input type="number" class="form-control" name="bandwidth" id="bandwidth" placeholder="bandwidth" value="{{plan.bandwidth}}" required>
+          <label for="bandwidth">Bandwidth</label>
+        </div>
+        <div class="form-control text-left">
+          <label for="featured">Featured?</label>
+          <select name="featured" id="featured">
+            <option value="NO">No</option>
+            <option value="YES">Yes</option>
+          </select>
+        </div>
+
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Update</button>
+      </form>
+    </div>
+  </div>
